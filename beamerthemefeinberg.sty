@@ -1,0 +1,15 @@
+\usepackage{tikz}
+
+
+\usecolortheme{feinberg}
+
+
+\setbeamertemplate{title page}
+{
+	\begin{tikzpicture}[overlay, remember picture]
+	\path [left color =nm-purple!70,right color = nm-purple] (current page.south west)rectangle (current page.north east);
+	
+	 \path[line width=2pt,color=red] (0,0) -- (5,0)  -- cycle;
+	
+	\end{tikzpicture}
+}
