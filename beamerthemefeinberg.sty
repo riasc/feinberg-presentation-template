@@ -9,7 +9,13 @@
 	\begin{tikzpicture}[overlay, remember picture]
 	\path [left color =nm-purple!70,right color = nm-purple] (current page.south west)rectangle (current page.north east);
 	
-	 \path[line width=2pt,color=red] (0,0) -- (5,0)  -- cycle;
+	%\node[inner sep=0pt] (triangle) at (-0.75,0)
+	%{\includegraphics[width=1.1\textwidth]{titlepageTriangle.png}};
+	
+	\node[inner sep=0pt] (logo) at (1.5,-0.5)
+	{\includegraphics[width=0.3\textwidth]{./Feinberg-LOGO-EPS/Feinberg-linear-white}};
+	
+	 %\path[line width=2pt,color=red] (0,0) -- (5,0)  -- cycle;
 	
 	\end{tikzpicture}
 }
