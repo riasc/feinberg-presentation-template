@@ -9,13 +9,16 @@
 	\begin{tikzpicture}[overlay, remember picture]
 	\path [left color =nm-purple!70,right color = nm-purple] (current page.south west)rectangle (current page.north east);
 	
-	%\node[inner sep=0pt] (triangle) at (-0.75,0)
-	%{\includegraphics[width=1.1\textwidth]{titlepageTriangle.png}};
-	
+	% include the left-aligned triangle
+	\node[inner sep=0pt] (triangle) at (-0.75,0)
+	{\includegraphics[width=1.1\textwidth]{titlepageTriangle.eps}};
+		
 	\node[inner sep=0pt] (logo) at (1.5,-0.5)
 	{\includegraphics[width=0.3\textwidth]{./Feinberg-LOGO-EPS/Feinberg-linear-white}};
 	
-	 %\path[line width=2pt,color=red] (0,0) -- (5,0)  -- cycle;
+	\node[text width=3cm, text=white] at (4,-8.75) {\footnotesize \today };
 	
 	\end{tikzpicture}
+
+	\date{\today}
 }
